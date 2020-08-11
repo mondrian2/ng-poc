@@ -1,0 +1,46 @@
+#order {
+    margin-top: 40px;
+    color: #676767;
+
+    img {
+        width: 98px;
+    }
+
+    .label,
+    .valor {
+        font-size: 0.8em;
+    }
+
+    .label {
+        width: 50%;
+    }
+
+    .selected-id {
+        color: #F66715;
+        font-weight: bold;
+    }
+
+    .total {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    table {
+        color: #909090;
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
+
+    .un {
+        font-size: 12.8px;
+    }
+
+    .un-valor {
+        font-size: 19.2px;
+        color: #676767;
+        font-family: 'Foco';
+        font-weight: bold;
+    }
+}

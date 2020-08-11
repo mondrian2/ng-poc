@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+$theme-colors: (
+  "primary": #143c8d,
+  "danger": #ff4136
+);
+$bg-primary: #143c8d;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: 'foco';
+    src: url('./assets/fonts/Foco_W_Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'foco';
+    src: url('./assets/fonts/Foco_W_Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'foco';
+    src: url('./assets/fonts/Foco_W_BdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'foco';
+    src: url('./assets/fonts/Foco_W_Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'foco';
+    src: url('./assets/fonts/Foco_W_LtIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+body {
+    background-color: #EEEEEE;
+}

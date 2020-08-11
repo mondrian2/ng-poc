@@ -1,0 +1,41 @@
+#nav1 {
+    height: 62px;
+    border-bottom: solid #EEEEEF 1px;
+    color: #909090;
+    font-family: "Foco";
+    letter-spacing: .4px;
+
+    a,
+    .btn-link,
+    .dropdown-item {
+        color: #909090;
+        text-decoration: none;
+    }
+
+    .categoria {
+        display: flex;
+        align-items: center;
+        font-size: 0.94rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+
+    .logo {
+
+        img {
+            width: 174px;
+        }
+
+    }
+
+    .user-menu {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 10px;
+        }
+    }
+
+}

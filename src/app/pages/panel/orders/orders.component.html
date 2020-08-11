@@ -1,0 +1,40 @@
+<div id="pedidos">
+    <div class="container">
+        <h4>PEDIDOS</h4>
+        <div class="row" *ngFor="let p of pedidos">
+            <div class="col-md-12">
+                <div 
+                    class="card border-top-0 border-right-0 border-bottom-0 border-info" 
+                    [ngClass]="{
+                        'border-danger':p.codigoSituacao == 2,
+                        'border-success':p.codigoSituacao == 5
+                    }"
+                   >
+                    <div class="row">
+                        <div class="col-md-3 text-center mt-4">
+                            <div class="data-efetiva-pedido">{{p.dataEfetivaPedido}}</div>
+                            <div class="numero-pedido">{{p.numeroPedido}} - {{p.codigoSituacao}}</div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="label">TIPO DE ENTREGA</div>
+                            <div class="tipo-entrega">{{p.tipoEntrega}}</div>
+                            <div class="label">ORIGEM</div>
+                            <div class="canal">{{p.canal}}</div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="label">STATUS DO PEDIDO</div>
+                            <div class="status">{{p.descricaoSituacaoAmigavel}}</div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="label">Valor Total</div>
+                            <div class="valor-total">R$ {{p.valorTotal}}</div>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <a [routerLink]="['/pedido/'+ p.numeroPedido]" class="btn btn-primary btn-lg active btn-detalhe" role="button" aria-pressed="true">DETALHE DO PEDIDO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

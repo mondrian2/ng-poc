@@ -1,0 +1,47 @@
+export class User {
+    codigo: string;
+    nomeDaEntidadeComercial: string;
+    uf: string;
+    tipoDeLogradouro: string;
+    nomeDoLogradouro: string;
+    numeroDeEndereco: string;
+    complemento: string;
+    cep: string;
+    nomeDaLocalidade: string;
+    codigoLocalidade: string;
+    codigoLogradouro: string;
+    codigoEnderecoEntidadeComercial: string;
+    identificadorEndereco: string;
+    siglaDaUF: string;
+    nomeDoBairro: string;
+    dataDeNascimento: string;
+    cpf: string;
+    sexo: string;
+    recebeEmailsPromocoes: string;
+    dddTelefone1: string;
+    telefone1: string;
+    dddTelefone2: string;
+    telefone2: string;
+    usuaioInternet: string;
+    codigoMeioComunicacao: string;
+    estadoCivil: string;
+    tipoMeioComunicacao: string;
+    usuario: string;
+    novoUsuario: string;
+    hashNovoUsuario: string;
+    senha: string;
+    data: string;
+    bloqueo: string;
+    hashConfirmacao: string;
+    usuarioLiberado: string;
+    necessitaAlterarSenha: string;
+    primeiroNome: string;
+    emailsAlternativos: string;
+    enderecosAlternativos: string;
+    dddsAlternativos: string;
+    telefonesAlternativos: string;
+    referencia: string;
+    testeCliente: string;
+    avisoAniversario: string;
+}
+

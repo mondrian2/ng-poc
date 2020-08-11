@@ -1,0 +1,32 @@
+<nav id="nav1" class="navbar navbar-light bg-white">
+    <div class="container">
+        <div class="col-3">
+            <div class="menu categoria">
+                <span class="material-icons">menu</span>
+                <span>categoria</span>
+            </div>
+        </div>
+        <div class="col-6 text-center">
+            <div class="logo">
+                <img src="../../../assets/images/logo-cruz.svg" alt="" srcset="" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-3 text-right">
+            <div class="user-menu"  >
+               
+                <div class="dropdown" *ngIf="currentUser">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>{{currentUser.primeiroNome}}</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button"><small><a class="" routerLink="/pedidos">MEUS PEDIDOS</a></small></button>
+                      <button class="dropdown-item" type="button" (click)="logout()"><small>LOGOUT</small></button>
+                    </div>
+                </div>
+                <span *ngIf="!currentUser"><a class="" routerLink="/login"><i class="fas fa-sign-in-alt"></i> ENTRAR</a></span>
+                <span class="material-icons">shopping_basket</span>
+            </div>
+        </div>
+        
+    </div>
+</nav>

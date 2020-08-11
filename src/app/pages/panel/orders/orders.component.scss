@@ -1,0 +1,39 @@
+#pedidos {
+    margin-top: 20px;
+    color: #909090;
+
+    h4 {
+        font-weight: bold;
+        color: #143c8d;
+    }
+
+    .card {
+        border-left: 4px solid;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+    }
+
+    .btn-detalhe,
+    .label,
+    .tipo-entrega,
+    .label,
+    .canal,
+    .status {
+        font-size: 0.8em;
+    }
+
+    .label{
+        color: #676767;
+    }
+
+    .valor-total {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .numero-pedido {
+        color: #F66715;
+        font-weight: bold;
+    }
+
+}
